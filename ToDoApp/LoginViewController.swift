@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("logowanie")
         print("testowanie")
+        print("testowanie2")
     }
 
 
