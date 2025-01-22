@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
         print("logowanie")
         print("testowanie")
         print("testowanie2")
+        print("testowanie3  ss")
         
     }
 
