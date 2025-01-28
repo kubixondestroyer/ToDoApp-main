@@ -23,9 +23,9 @@ class RegisterViewController: UIViewController {
 //        }
     }
     
-    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-      // ...
-    } //rejesterowanie nowych uzytkowników
+//    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+//      // ...
+//    } //rejesterowanie nowych uzytkowników
 
 
 }
