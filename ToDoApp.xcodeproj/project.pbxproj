@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		650A657D2D44557800270841 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 650A657C2D44557800270841 /* GoogleService-Info.plist */; };
 		650A65B12D4459D900270841 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 650A65B02D4459D900270841 /* FirebaseAnalytics */; };
 		650A65B32D4459D900270841 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 650A65B22D4459D900270841 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		650A65B52D4459D900270841 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 650A65B42D4459D900270841 /* FirebaseAuth */; };
@@ -15,9 +14,11 @@
 		650A65B92D4459D900270841 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 650A65B82D4459D900270841 /* FirebaseDatabase */; };
 		650A65BB2D4459D900270841 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 650A65BA2D4459D900270841 /* FirebaseFirestore */; };
 		650A65BD2D4459D900270841 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 650A65BC2D4459D900270841 /* FirebaseStorage */; };
+		656593412D4BE6740020B066 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656593402D4BE6710020B066 /* AuthenticationManager.swift */; };
+		656593452D4C2B3C0020B066 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656593442D4C2B3C0020B066 /* GoogleService-Info.plist */; };
 		65B7647F2D00BAE10071A623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7647E2D00BAE10071A623 /* AppDelegate.swift */; };
 		65B764812D00BAE10071A623 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B764802D00BAE10071A623 /* SceneDelegate.swift */; };
-		65B764832D00BAE10071A623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B764822D00BAE10071A623 /* ViewController.swift */; };
+		65B764832D00BAE10071A623 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B764822D00BAE10071A623 /* LoggedInViewController.swift */; };
 		65B764862D00BAE10071A623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B764842D00BAE10071A623 /* Main.storyboard */; };
 		65B764882D00BAE20071A623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B764872D00BAE20071A623 /* Assets.xcassets */; };
 		65B7648B2D00BAE20071A623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B764892D00BAE20071A623 /* LaunchScreen.storyboard */; };
@@ -26,11 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		650A657C2D44557800270841 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		656593402D4BE6710020B066 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		656593442D4C2B3C0020B066 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		65B7647B2D00BAE10071A623 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B7647E2D00BAE10071A623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65B764802D00BAE10071A623 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65B764822D00BAE10071A623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65B764822D00BAE10071A623 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		65B764852D00BAE10071A623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65B764872D00BAE20071A623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B7648A2D00BAE20071A623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,14 +80,15 @@
 			children = (
 				65B7647E2D00BAE10071A623 /* AppDelegate.swift */,
 				65B764802D00BAE10071A623 /* SceneDelegate.swift */,
-				65B764822D00BAE10071A623 /* ViewController.swift */,
+				65B764822D00BAE10071A623 /* LoggedInViewController.swift */,
 				65B764922D00C1C40071A623 /* LoginViewController.swift */,
 				65B764942D00C1D00071A623 /* RegisterViewController.swift */,
+				656593402D4BE6710020B066 /* AuthenticationManager.swift */,
 				65B764842D00BAE10071A623 /* Main.storyboard */,
 				65B764872D00BAE20071A623 /* Assets.xcassets */,
 				65B764892D00BAE20071A623 /* LaunchScreen.storyboard */,
 				65B7648C2D00BAE20071A623 /* Info.plist */,
-				650A657C2D44557800270841 /* GoogleService-Info.plist */,
+				656593442D4C2B3C0020B066 /* GoogleService-Info.plist */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -152,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B7648B2D00BAE20071A623 /* LaunchScreen.storyboard in Resources */,
-				650A657D2D44557800270841 /* GoogleService-Info.plist in Resources */,
+				656593452D4C2B3C0020B066 /* GoogleService-Info.plist in Resources */,
 				65B764882D00BAE20071A623 /* Assets.xcassets in Resources */,
 				65B764862D00BAE10071A623 /* Main.storyboard in Resources */,
 			);
@@ -167,7 +170,8 @@
 			files = (
 				65B764932D00C1C40071A623 /* LoginViewController.swift in Sources */,
 				65B764952D00C1D00071A623 /* RegisterViewController.swift in Sources */,
-				65B764832D00BAE10071A623 /* ViewController.swift in Sources */,
+				656593412D4BE6740020B066 /* AuthenticationManager.swift in Sources */,
+				65B764832D00BAE10071A623 /* LoggedInViewController.swift in Sources */,
 				65B7647F2D00BAE10071A623 /* AppDelegate.swift in Sources */,
 				65B764812D00BAE10071A623 /* SceneDelegate.swift in Sources */,
 			);
