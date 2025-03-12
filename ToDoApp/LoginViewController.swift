@@ -46,16 +46,12 @@ class LoginViewController: UIViewController {
                 print("❌ self jest nil, nie można zmienić isLoggedIn")
                 return
             }
-            
             if let error = error {
                         print("🚨 Błąd logowania: \(error.localizedDescription)")
                     } else {
                         print("✅ Logowanie powiodło się!")
                         strongSelf.performSegue(withIdentifier: "goToLoggedIn", sender: strongSelf)
                     }
-            
-            //print("✅ Logowanie powiodło się!")
-            
 //            DispatchQueue.main.async {
 //                let storyboard = UIStoryboard(name: "Main", bundle: nil)  // Upewnij się, że "Main" to nazwa Twojego storyboarda
 //                  if let nextViewController = storyboard.instantiateViewController(withIdentifier: "LoggedInViewController") as? LoggedInViewController {
@@ -66,8 +62,5 @@ class LoginViewController: UIViewController {
 //            }
             print("koniec procesu")
         }
-        
-        
-        
     }
 }
