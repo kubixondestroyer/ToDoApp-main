@@ -16,6 +16,7 @@
 		650A65BD2D4459D900270841 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 650A65BC2D4459D900270841 /* FirebaseStorage */; };
 		656593412D4BE6740020B066 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656593402D4BE6710020B066 /* AuthenticationManager.swift */; };
 		656593452D4C2B3C0020B066 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656593442D4C2B3C0020B066 /* GoogleService-Info.plist */; };
+		656D7BCE2E031B3300A2531B /* Profile1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656D7BCD2E031AF900A2531B /* Profile1ViewController.swift */; };
 		6572A78B2DEB8C6600862877 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572A78A2DEB8C6100862877 /* TaskCell.swift */; };
 		6572A78D2DF7929100862877 /* EditTodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572A78C2DF7928B00862877 /* EditTodoController.swift */; };
 		6580B7292D823FFF00477A37 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580B7282D823FFB00477A37 /* Todo.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		656593402D4BE6710020B066 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		656593442D4C2B3C0020B066 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		656D7BCD2E031AF900A2531B /* Profile1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile1ViewController.swift; sourceTree = "<group>"; };
 		6572A78A2DEB8C6100862877 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		6572A78C2DF7928B00862877 /* EditTodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTodoController.swift; sourceTree = "<group>"; };
 		6580B7282D823FFB00477A37 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				65A067B72D99C93200D213E1 /* TaskTableViewCell.swift */,
 				6572A78A2DEB8C6100862877 /* TaskCell.swift */,
 				6580B7282D823FFB00477A37 /* Todo.swift */,
+				656D7BCD2E031AF900A2531B /* Profile1ViewController.swift */,
 				6572A78C2DF7928B00862877 /* EditTodoController.swift */,
 				65B7647E2D00BAE10071A623 /* AppDelegate.swift */,
 				65B764802D00BAE10071A623 /* SceneDelegate.swift */,
@@ -190,6 +193,7 @@
 				65B764952D00C1D00071A623 /* RegisterViewController.swift in Sources */,
 				656593412D4BE6740020B066 /* AuthenticationManager.swift in Sources */,
 				65B764832D00BAE10071A623 /* LoggedInViewController.swift in Sources */,
+				656D7BCE2E031B3300A2531B /* Profile1ViewController.swift in Sources */,
 				65A067B92D99EF9900D213E1 /* AddTodoController.swift in Sources */,
 				65B7647F2D00BAE10071A623 /* AppDelegate.swift in Sources */,
 				6572A78B2DEB8C6600862877 /* TaskCell.swift in Sources */,

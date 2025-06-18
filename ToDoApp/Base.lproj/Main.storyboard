@@ -149,14 +149,14 @@
                     <connections>
                         <outlet property="emailTextField" destination="0Gg-y5-3pz" id="qtN-ds-kcM"/>
                         <outlet property="passwordTextField" destination="xNZ-me-8M6" id="l9w-ZZ-c7t"/>
-                        <segue destination="UM7-eK-WJc" kind="show" identifier="goToLoggedIn" id="Jxi-l1-sqq"/>
+                        <segue destination="qGT-u1-q86" kind="show" identifier="goToLoggedIn" id="Jxi-l1-sqq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhU-JK-bay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3000.7633587786258" y="-303.52112676056339"/>
         </scene>
-        <!--Logged In View Controller-->
+        <!--Home-->
         <scene sceneID="KaB-4L-5ym">
             <objects>
                 <viewController storyboardIdentifier="LoggedInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UM7-eK-WJc" customClass="LoggedInViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,18 +164,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rko-QY-3Iy">
-                                <rect key="frame" x="16" y="774" width="361" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.72156864399999998" green="0.86666667460000002" blue="0.94901967050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save Data">
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="UM7-eK-WJc" eventType="touchUpInside" id="tMp-fe-64R"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To Do List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdy-cy-bag">
                                 <rect key="frame" x="100" y="60.000000000000007" width="293" height="20.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -192,10 +180,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmA-Q4-MbS">
-                                <rect key="frame" x="166" y="103" width="61" height="35"/>
+                                <rect key="frame" x="150" y="103" width="94" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="EDIT"/>
+                                <buttonConfiguration key="configuration" style="plain" title="EDIT test"/>
                                 <connections>
                                     <action selector="editTask:" destination="UM7-eK-WJc" eventType="touchUpInside" id="bE9-QM-DD3"/>
                                 </connections>
@@ -206,14 +194,14 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" id="rkM-nv-wfY" customClass="TaskCell" customModule="ToDoApp">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="65"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="65.333335876464844"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkM-nv-wfY" id="BCA-ry-1Ls">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="65.333335876464844"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" tag="100" contentMode="scaleToFill" restorationIdentifier="ButtonButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LD-oB-XqM" userLabel="tapButton">
-                                                    <rect key="frame" x="327.33333333333331" y="15" width="49.666666666666686" height="35"/>
+                                                    <rect key="frame" x="327.33333333333331" y="15.000000000000004" width="49.666666666666686" height="35.333333333333343"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system"/>
                                                     <connections>
@@ -221,7 +209,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrP-UL-Dhf">
-                                                    <rect key="frame" x="31.000000000000004" y="11.000000000000004" width="41.333333333333343" height="43.333333333333343"/>
+                                                    <rect key="frame" x="31.000000000000004" y="10.999999999999996" width="41.333333333333343" height="43.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -265,9 +253,11 @@
                             <constraint firstItem="wdy-cy-bag" firstAttribute="top" secondItem="Ilw-n2-rce" secondAttribute="top" constant="60" id="kpH-pz-L62"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="3iG-AZ-UqQ"/>
                     <navigationItem key="navigationItem" id="3kf-nZ-q5K">
                         <nil key="title"/>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="R4k-It-mO4" id="pJ6-Qj-0ZB"/>
                         <segue destination="ySq-rB-aKB" kind="presentation" identifier="addNewTodo" id="5Yh-t2-xpi"/>
@@ -276,7 +266,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JxD-oP-eFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3941.2213740458014" y="-290.14084507042253"/>
+            <point key="canvasLocation" x="5182.4427480916029" y="-199.29577464788733"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="5B0-2m-CDK">
+            <objects>
+                <viewController id="VrZ-cM-NYe" customClass="Profile1ViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NYq-lL-YrV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label testowy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZE-1o-eq9">
+                                <rect key="frame" x="175" y="358" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j33-Zo-Med"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="Lyz-Cs-Y2K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFo-mz-Ggf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4888" y="476"/>
         </scene>
         <!--Edit Todo Controller-->
         <scene sceneID="qLf-In-dvU">
@@ -312,7 +327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPJ-ZF-Ksx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5000.7633587786258" y="34.507042253521128"/>
+            <point key="canvasLocation" x="6185.4961832061063" y="68.309859154929583"/>
         </scene>
         <!--Add Todo Controller-->
         <scene sceneID="Sde-35-kVg">
@@ -363,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7m-UB-mvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5011" y="-661"/>
+            <point key="canvasLocation" x="6185.4961832061063" y="-623.23943661971839"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IYH-jn-aJO">
@@ -383,10 +398,32 @@
             </objects>
             <point key="canvasLocation" x="1055.7251908396945" y="-34.507042253521128"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Svw-mO-a2N">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qGT-u1-q86" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="axc-xD-x2z"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c6p-bY-3HK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UM7-eK-WJc" kind="relationship" relationship="viewControllers" id="lNr-5H-QMg"/>
+                        <segue destination="VrZ-cM-NYe" kind="relationship" relationship="viewControllers" id="NNj-oo-Fy7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="092-3x-8nq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4255.7251908396947" y="-199.29577464788733"/>
+        </scene>
     </scenes>
     <resources>
         <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="house" catalog="system" width="128" height="104"/>
         <image name="minus.circle" catalog="system" width="128" height="123"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
