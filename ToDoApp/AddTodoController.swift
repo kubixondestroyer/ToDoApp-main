@@ -15,6 +15,7 @@ class AddTodoController: UIViewController{
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("test text to check if comit to github works")
     }
     
     let data : [String] = ["test data1"]
