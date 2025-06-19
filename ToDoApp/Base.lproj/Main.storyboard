@@ -276,9 +276,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label testowy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZE-1o-eq9">
-                                <rect key="frame" x="175" y="358" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZE-1o-eq9">
+                                <rect key="frame" x="40" y="131" width="145" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qvK-vX-ahx">
+                                <rect key="frame" x="76" y="200.66666666666663" width="240" height="259.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="O5v-vS-yzk"/>
+                                    <constraint firstAttribute="width" constant="240" id="WJw-5x-Okf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="hcM-mf-y1A"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="oEz-ST-BE7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kv8-EE-Fed" userLabel="EmailLabel">
+                                <rect key="frame" x="76" y="586" width="235.66666666666663" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7d-KO-eBG" userLabel="JoinTimeLabel">
+                                <rect key="frame" x="78.666666666666671" y="657" width="235.66666666666663" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4e-D2-kYm">
+                                <rect key="frame" x="151.66666666666666" y="706" width="90" height="35"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beh-LL-lE3" userLabel="NameLabel">
+                                <rect key="frame" x="76" y="515" width="235.66666666666663" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -286,12 +318,25 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j33-Zo-Med"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kv8-EE-Fed" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="4Z3-6a-xRT"/>
+                            <constraint firstItem="K7d-KO-eBG" firstAttribute="width" secondItem="NYq-lL-YrV" secondAttribute="width" multiplier="0.6" id="62w-eC-hP0"/>
+                            <constraint firstItem="V4e-D2-kYm" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="6Jz-aj-sV0"/>
+                            <constraint firstItem="beh-LL-lE3" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="I9S-WY-5MY"/>
+                            <constraint firstItem="MZE-1o-eq9" firstAttribute="leading" secondItem="j33-Zo-Med" secondAttribute="leading" constant="40" id="NAw-5g-vWl"/>
+                            <constraint firstItem="K7d-KO-eBG" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="Vmy-rx-63X"/>
+                            <constraint firstItem="beh-LL-lE3" firstAttribute="width" secondItem="NYq-lL-YrV" secondAttribute="width" multiplier="0.6" id="dmG-cW-KoA"/>
+                            <constraint firstItem="j33-Zo-Med" firstAttribute="bottom" secondItem="V4e-D2-kYm" secondAttribute="bottom" constant="28" id="pGv-Vf-Uqz"/>
+                            <constraint firstItem="qvK-vX-ahx" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="tsx-dE-PEZ"/>
+                            <constraint firstItem="kv8-EE-Fed" firstAttribute="width" secondItem="NYq-lL-YrV" secondAttribute="width" multiplier="0.6" id="yvW-7f-SSN"/>
+                            <constraint firstItem="MZE-1o-eq9" firstAttribute="top" secondItem="j33-Zo-Med" secondAttribute="top" constant="28" id="zsh-aW-tcl"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="Lyz-Cs-Y2K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFo-mz-Ggf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4888" y="476"/>
+            <point key="canvasLocation" x="4887.7862595419847" y="475.35211267605638"/>
         </scene>
         <!--Edit Todo Controller-->
         <scene sceneID="qLf-In-dvU">
@@ -424,9 +469,13 @@
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="minus.circle" catalog="system" width="128" height="123"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
