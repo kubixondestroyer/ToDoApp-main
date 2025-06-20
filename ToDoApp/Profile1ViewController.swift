@@ -16,18 +16,51 @@ import Firebase
 
 class Profile1ViewController: UIViewController {
 
-//    @IBOutlet weak var nameLabel: UILabel!
-//    
-//    @IBOutlet weak var emailLabel: UILabel!
-//    
-//    @IBOutlet weak var memberSinceLabel: UILabel!
-//    
+    @IBOutlet weak var stackView: UIStackView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var emtpyLabel1: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var emptyLabel2: UILabel!
+    
+    @IBOutlet weak var joinTimeLabel: UILabel!
+    
+    
+    
+    
+//    override func viewDidLoad() {
+//          super.viewDidLoad()
+//          print("Profile 11234567")
+//        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+//        emailLabel.translatesAutoresizingMaskIntoConstraints = false
+//        joinTimeLabel.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([nameLabel.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.5)])
+//        NSLayoutConstraint.activate([emailLabel.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.9)])
+//        NSLayoutConstraint.activate([joinTimeLabel.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.2)])
+//
+//      }
     override func viewDidLoad() {
-          super.viewDidLoad()
-          print("Profile 11234567")
+        super.viewDidLoad()
 
-      }
-      
+        let labels = [nameLabel, emtpyLabel1, emailLabel, emptyLabel2, joinTimeLabel]
+
+        for label in labels {
+            label?.translatesAutoresizingMaskIntoConstraints = false
+
+            NSLayoutConstraint.activate([
+                label!.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.7)
+            ])
+
+            label?.textAlignment = .center
+            label?.numberOfLines = 0 // jeśli tekst jest dłuższy
+        }
+    }
+    
+    
+    
       override func viewDidAppear(_ animated: Bool) {
           super.viewWillAppear(animated)
           // Ukrywanie paska nawigacyjnego, ale bez animacji, by uniknąć migotania

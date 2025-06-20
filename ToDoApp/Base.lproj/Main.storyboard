@@ -277,62 +277,100 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZE-1o-eq9">
-                                <rect key="frame" x="40" y="131" width="145" height="39"/>
+                                <rect key="frame" x="40" y="131" width="144.66666666666666" height="38.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qvK-vX-ahx">
-                                <rect key="frame" x="76" y="200.66666666666663" width="240" height="259.00000000000006"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xdz-1q-UpC">
+                                <rect key="frame" x="19.666666666666657" y="180.33333333333334" width="353.66666666666674" height="511.33333333333326"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qvK-vX-ahx">
+                                        <rect key="frame" x="57" y="0.6666666666666714" width="240" height="238.66666666666663"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="D1r-QD-pEr"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="hcM-mf-y1A"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name testowane" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beh-LL-lE3" userLabel="NameLabel">
+                                        <rect key="frame" x="112.99999999999997" y="240" width="127.66666666666666" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="qcj-2Q-Ry2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="pole" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bd-3N-Zjo">
+                                        <rect key="frame" x="160.33333333333334" y="300" width="33" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="46" id="lSN-aL-y6P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name co test" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kv8-EE-Fed" userLabel="EmailLabel">
+                                        <rect key="frame" x="126.33333333333334" y="346" width="101.33333333333334" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="142-D1-XRO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flq-i4-V9o">
+                                        <rect key="frame" x="156.33333333333334" y="406" width="41.333333333333343" height="45.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45.329999999999998" id="fIc-Np-y7t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name o testowania sobie testoweee" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7d-KO-eBG" userLabel="JoinTimeLabel">
+                                        <rect key="frame" x="40.333333333333343" y="451.33333333333326" width="273.33333333333326" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="YSq-Z3-vGQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="O5v-vS-yzk"/>
-                                    <constraint firstAttribute="width" constant="240" id="WJw-5x-Okf"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="hcM-mf-y1A"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="oEz-ST-BE7"/>
+                                    <constraint firstItem="K7d-KO-eBG" firstAttribute="centerX" secondItem="xdz-1q-UpC" secondAttribute="centerX" id="THg-8K-mZ9"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kv8-EE-Fed" userLabel="EmailLabel">
-                                <rect key="frame" x="76" y="586" width="235.66666666666663" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7d-KO-eBG" userLabel="JoinTimeLabel">
-                                <rect key="frame" x="78.666666666666671" y="657" width="235.66666666666663" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4e-D2-kYm">
-                                <rect key="frame" x="151.66666666666666" y="706" width="90" height="35"/>
+                                <rect key="frame" x="151.66666666666666" y="714.66666666666663" width="90" height="34.333333333333371"/>
                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beh-LL-lE3" userLabel="NameLabel">
-                                <rect key="frame" x="76" y="515" width="235.66666666666663" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j33-Zo-Med"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kv8-EE-Fed" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="4Z3-6a-xRT"/>
-                            <constraint firstItem="K7d-KO-eBG" firstAttribute="width" secondItem="NYq-lL-YrV" secondAttribute="width" multiplier="0.6" id="62w-eC-hP0"/>
                             <constraint firstItem="V4e-D2-kYm" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="6Jz-aj-sV0"/>
-                            <constraint firstItem="beh-LL-lE3" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="I9S-WY-5MY"/>
+                            <constraint firstItem="xdz-1q-UpC" firstAttribute="centerY" secondItem="NYq-lL-YrV" secondAttribute="centerY" constant="10" id="86w-3c-nOY"/>
+                            <constraint firstItem="xdz-1q-UpC" firstAttribute="width" secondItem="NYq-lL-YrV" secondAttribute="width" multiplier="0.9" id="GRZ-uy-1Gw"/>
                             <constraint firstItem="MZE-1o-eq9" firstAttribute="leading" secondItem="j33-Zo-Med" secondAttribute="leading" constant="40" id="NAw-5g-vWl"/>
-                            <constraint firstItem="K7d-KO-eBG" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="Vmy-rx-63X"/>
-                            <constraint firstItem="beh-LL-lE3" firstAttribute="width" secondItem="NYq-lL-YrV" secondAttribute="width" multiplier="0.6" id="dmG-cW-KoA"/>
-                            <constraint firstItem="j33-Zo-Med" firstAttribute="bottom" secondItem="V4e-D2-kYm" secondAttribute="bottom" constant="28" id="pGv-Vf-Uqz"/>
-                            <constraint firstItem="qvK-vX-ahx" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="tsx-dE-PEZ"/>
-                            <constraint firstItem="kv8-EE-Fed" firstAttribute="width" secondItem="NYq-lL-YrV" secondAttribute="width" multiplier="0.6" id="yvW-7f-SSN"/>
+                            <constraint firstItem="xdz-1q-UpC" firstAttribute="height" secondItem="NYq-lL-YrV" secondAttribute="height" multiplier="0.6" id="PIG-lk-mMA"/>
+                            <constraint firstItem="xdz-1q-UpC" firstAttribute="centerX" secondItem="NYq-lL-YrV" secondAttribute="centerX" id="Q82-pf-eOf"/>
+                            <constraint firstItem="j33-Zo-Med" firstAttribute="bottom" secondItem="V4e-D2-kYm" secondAttribute="bottom" constant="20" id="pGv-Vf-Uqz"/>
                             <constraint firstItem="MZE-1o-eq9" firstAttribute="top" secondItem="j33-Zo-Med" secondAttribute="top" constant="28" id="zsh-aW-tcl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="Lyz-Cs-Y2K"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="kv8-EE-Fed" id="bXA-6t-7bq"/>
+                        <outlet property="emptyLabel2" destination="flq-i4-V9o" id="suh-fx-qNe"/>
+                        <outlet property="emtpyLabel1" destination="1Bd-3N-Zjo" id="2sy-Th-O7O"/>
+                        <outlet property="joinTimeLabel" destination="K7d-KO-eBG" id="utu-AU-hUU"/>
+                        <outlet property="nameLabel" destination="beh-LL-lE3" id="qFL-nh-ETO"/>
+                        <outlet property="stackView" destination="xdz-1q-UpC" id="raW-vn-fwH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFo-mz-Ggf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
