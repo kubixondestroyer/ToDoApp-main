@@ -29,22 +29,13 @@ class Profile1ViewController: UIViewController {
     @IBOutlet weak var joinTimeLabel: UILabel!
     
     
-    
-    
-//    override func viewDidLoad() {
-//          super.viewDidLoad()
-//          print("Profile 11234567")
-//        nameLabel.translatesAutoresizingMaskIntoConstraints = false
-//        emailLabel.translatesAutoresizingMaskIntoConstraints = false
-//        joinTimeLabel.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([nameLabel.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.5)])
-//        NSLayoutConstraint.activate([emailLabel.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.9)])
-//        NSLayoutConstraint.activate([joinTimeLabel.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.2)])
-//
-//      }
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
+    
+    
+    override func viewDidLoad() {
+        self.navigationController?.navigationBar.isHidden = true
+        super.viewDidLoad()
+        
         let labels = [nameLabel, emtpyLabel1, emailLabel, emptyLabel2, joinTimeLabel]
 
         for label in labels {
@@ -57,67 +48,72 @@ class Profile1ViewController: UIViewController {
             label?.textAlignment = .center
             label?.numberOfLines = 0 // jeśli tekst jest dłuższy
         }
+        
+        loadUserInfo()
     }
     
-    
-    
-      override func viewDidAppear(_ animated: Bool) {
-          super.viewWillAppear(animated)
-          // Ukrywanie paska nawigacyjnego, ale bez animacji, by uniknąć migotania
-          self.navigationController?.setNavigationBarHidden(true, animated: false)
-          
-          super.viewWillDisappear(animated)
-          // Przywracanie paska nawigacyjnego, kiedy wracamy do poprzedniego widoku
-          self.navigationController?.setNavigationBarHidden(false, animated: false)
-      }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
+
 
 
   
 
-//    func loadUserInfo() {
-//        guard let user = Auth.auth().currentUser else {
-//            emailLabel.text = "Nie zalogowano"
-//            // now I have to get DOC.ID
-//            return
-//        }
-//        
-//        let db = Firestore.firestore()
-//        let userRef = db.collection("users").document(user.uid)
-//        
-//        userRef.getDocument { (document, error) in
-//            if let document = document, document.exists {
-//                let data = document.data()
-//                let email = data?["email"] as? String ?? "Nie ma emaila"
-//                let username = data?["username"] as? String ?? "Nie ma usernamea"
-//                let timestamp = data?["timestamp"] as? Timestamp
-//                let memberSince = timestamp?.dateValue() ?? Date()
-//                
-//                // formatowanie daty
-//                let dateFormatter = DateFormatter()
-//                dateFormatter.dateStyle = .medium
-//                
-//                
-//                DispatchQueue.main.async {
-//                               self.emailLabel.text = "Email: \(email)"
-//                               self.nameLabel.text = "Nazwa: \(username)"
-//                               self.memberSinceLabel.text = "Z nami od: \(dateFormatter.string(from: memberSince))"
-//                           }
-//                
-//            } else{
-//                print("nie znaleziono dokumentu uzytkownika")
-//            }
-//        }
+    func loadUserInfo() {
+        guard let user = Auth.auth().currentUser else {
+            emailLabel.text = "Nie zalogowano"
+            // now I have to get DOC.ID
+            return
+        }
         
+        let db = Firestore.firestore()
+        let userRef = db.collection("users").document(user.uid)
         
-//        print(user.email ?? "Nie zalogowano")
-//        print(user.uid)
-//        
-//        
-//        let taskRef = Firestore.firestore()
-//            .collection("users")
-//            .document(user.uid)
-//            .collection("todos")
-//            
-// 
-//    }
+        userRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                let data = document.data()
+                let email = data?["email"] as? String ?? "Nie ma emaila"
+                let username = data?["username"] as? String ?? "Nie ma usernamea"
+                let timestamp = data?["timestamp"] as? Timestamp
+                let memberSince = timestamp?.dateValue() ?? Date()
+                
+                // formatowanie daty
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateStyle = .medium
+                
+                
+                DispatchQueue.main.async {
+                               self.emailLabel.text = "Email: \(email)"
+                               self.nameLabel.text = "Nazwa: \(username)"
+                               self.joinTimeLabel.text = "Z nami od: \(dateFormatter.string(from: memberSince))"
+                           }
+                
+            } else{
+                print("nie znaleziono dokumentu uzytkownika")
+            }
+        }
+ 
+    }
+    @IBAction func signOutButton(_ sender: Any) {
+        let auth = Auth.auth()
+        
+        do {
+            try auth.signOut()
+            print("poprawnie wylogowano")
+            self.dismiss(animated: true, completion: nil)
+            self.performSegue(withIdentifier: "returnToHomePage", sender: self)
+            
+        }catch let signOutError{
+            self.present(UIAlertController(title: "Wylogowanie nie powiodło się", message: "\(signOutError)", preferredStyle: .alert), animated: true)
+        }
+        
+    }
 }

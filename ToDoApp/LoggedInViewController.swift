@@ -20,6 +20,8 @@ class LoggedInViewController: UIViewController, UITableViewDataSource, UITableVi
     var selectedTaskID : Int = 0
     var selectedFirestoreID : String = ""
     var selectedTaskText: String = ""
+    
+
     @IBAction func editTask(_ sender: UIButton) {
         
         if selectedTaskIDs.count == 0 {
@@ -61,6 +63,12 @@ class LoggedInViewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Upewniamy się, że pasek nawigacyjny WRACA gdy wracasz do tego widoku
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
     
     
     var tasks: [String] = []
@@ -71,7 +79,9 @@ class LoggedInViewController: UIViewController, UITableViewDataSource, UITableVi
     var didJustRemoveTasks = false
     
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.isHidden = false
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         tableView.dataSource = self // ask me for data
         tableView.delegate = self // ask me for interaction
