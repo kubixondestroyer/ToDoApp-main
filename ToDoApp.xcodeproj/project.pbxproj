@@ -29,6 +29,7 @@
 		65B7648B2D00BAE20071A623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B764892D00BAE20071A623 /* LaunchScreen.storyboard */; };
 		65B764932D00C1C40071A623 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B764922D00C1C40071A623 /* LoginViewController.swift */; };
 		65B764952D00C1D00071A623 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B764942D00C1D00071A623 /* RegisterViewController.swift */; };
+		65C16D152E0C5E9B00C6AE0B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C16D142E0C5E9400C6AE0B /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		65B7648C2D00BAE20071A623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B764922D00C1C40071A623 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		65B764942D00C1D00071A623 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		65C16D142E0C5E9400C6AE0B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				65A067B72D99C93200D213E1 /* TaskTableViewCell.swift */,
 				6572A78A2DEB8C6100862877 /* TaskCell.swift */,
 				6580B7282D823FFB00477A37 /* Todo.swift */,
+				65C16D142E0C5E9400C6AE0B /* FirstViewController.swift */,
 				656D7BCD2E031AF900A2531B /* Profile1ViewController.swift */,
 				6572A78C2DF7928B00862877 /* EditTodoController.swift */,
 				65B7647E2D00BAE10071A623 /* AppDelegate.swift */,
@@ -191,6 +194,7 @@
 				6580B7292D823FFF00477A37 /* Todo.swift in Sources */,
 				65B764932D00C1C40071A623 /* LoginViewController.swift in Sources */,
 				65B764952D00C1D00071A623 /* RegisterViewController.swift in Sources */,
+				65C16D152E0C5E9B00C6AE0B /* FirstViewController.swift in Sources */,
 				656593412D4BE6740020B066 /* AuthenticationManager.swift in Sources */,
 				65B764832D00BAE10071A623 /* LoggedInViewController.swift in Sources */,
 				656D7BCE2E031B3300A2531B /* Profile1ViewController.swift in Sources */,

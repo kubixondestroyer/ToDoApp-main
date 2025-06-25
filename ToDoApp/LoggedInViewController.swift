@@ -144,10 +144,14 @@ class LoggedInViewController: UIViewController, UITableViewDataSource, UITableVi
         
         guard let user = Auth.auth().currentUser else {return}
         
+        if selectedTaskIDs.count == 0 {
+            showAlert(title: "Błąd", message:"Nie zaznaczyłeś zadania!")
+                return
+        }
         let userTasksRef = db.collection("users").document(user.uid).collection("todos")
         
         //let indexToRemove = selectedTaskIDs.sorted(by: >)  // sortowanie do konca // jest to traktowane jako String
-
+        
         
             for docID in selectedTaskIDs{
                 userTasksRef.document(docID).delete(){ error in
